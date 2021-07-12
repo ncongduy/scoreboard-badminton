@@ -2,11 +2,11 @@
   text-align: center;
 }
 
-.home {
+.team1 {
   color: red;
 }
 
-.away {
+.team2 {
   color: blue;
 }
 
@@ -22,7 +22,7 @@ tr {
 }
 
 th {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 td {
@@ -33,9 +33,11 @@ button {
   font-size: 30px;
 }
 
+input {
+  font-size: 22px;
+  width: 100px;
+}
 
-@media screen and (max-width: 500px) {
-  table {
-    margin: 10% auto;
-  }
+input[type=radio] {
+  height: 20px;
 }
