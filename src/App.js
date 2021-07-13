@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import Member from "./components/Member";
 
 function App() {
   const [homeScore, setHomeScore] = useState(0);
@@ -25,46 +26,30 @@ function App() {
         <thead>
           <tr>
             <th>
-              <label>
-                <input
-                  type="text"
-                  className="team1"
-                  value={team1Member1}
-                  onChange={(e) => setTeam1Member1(e.target.value)}
-                ></input>
-              </label>
-              <input name="team1" type="radio" value="member1"></input>
+              <Member
+                team="team1"
+                member={team1Member1}
+                onChange={(value) => setTeam1Member1(value)}
+              />
 
-              <label>
-                <input
-                  type="text"
-                  className="team1"
-                  value={team1Member2}
-                  onChange={(e) => setTeam1Member2(e.target.value)}
-                ></input>
-              </label>
-              <input name="team1" type="radio" value="member2"></input>
+              <Member
+                team="team1"
+                member={team1Member2}
+                onChange={(value) => setTeam1Member2(value)}
+              />
             </th>
             <th>
-              <label>
-                <input
-                  type="text"
-                  className="team2"
-                  value={team2Member1}
-                  onChange={(e) => setTeam2Member1(e.target.value)}
-                ></input>
-              </label>
-              <input name="team2" type="radio" value="member1"></input>
+              <Member
+                team="team2"
+                member={team2Member1}
+                onChange={(value) => setTeam2Member1(value)}
+              />
 
-              <label>
-                <input
-                  type="text"
-                  className="team2"
-                  value={team2Member2}
-                  onChange={(e) => setTeam2Member2(e.target.value)}
-                ></input>
-              </label>
-              <input name="team2" type="radio" value="member2"></input>
+              <Member
+                team="team2"
+                member={team2Member2}
+                onChange={(value) => setTeam2Member2(value)}
+              />
             </th>
           </tr>
         </thead>
